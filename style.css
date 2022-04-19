@@ -1,7 +1,110 @@
 #menu
 {
 	position: fixed;
+	width: 99%;
+	height: 50px;
+	background: rgb(72, 232, 253);
+}
+
+.toolBar {
+	text-align: right;
+}
+
+.top {
 	width: 100%;
-	height: 35px;
-	background: white;
+}
+
+.container {
+	text-align: center;
+	color: yellow;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, .4);
+}
+
+.column {
+	float: left;
+	width: 14.2%;
+	text-align: center;
+} 
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	text-align: center;
+}
+
+.columnDesgin {
+	float: left;
+	width: 50%;
+	text-align: center;
+} 
+
+.rowDesgin::after {
+	content: "";
+	clear: both;
+	display: table;
+	text-align: center;
+}
+
+.headline {
+	width: 100%; 
+	text-align: center; 
+	border-bottom: 10px solid rgb(81, 175, 219); 
+	line-height: 0.1em;
+	margin: 10px 0 20px; 
+ } 
+ 
+.headline span { 
+	background-color:seashell;
+	padding:0 10px; 
+ }
+
+.cover-white-box {
+    width: 693px;
+    height: 207px;
+    margin-bottom: 30px;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.83);
+}
+
+div {
+    word-break: break-word;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.textAbout {
+	text-align: center;
+}
+
+.comment {
+	height: 200px;
+	width: 200px;
+}
+
+.left {
+	text-align: left;
+	float: left;
+	clear: none;
+	width: 50%;
+}
+
+.right {
+	text-align: right;
+	float: right;
+	clear: none;
+	width: 50%;
 }
