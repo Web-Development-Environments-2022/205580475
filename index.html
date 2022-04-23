@@ -6,6 +6,7 @@
   <body style="background-color:seashell;">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="mOelKLv8"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <header id="menu">
       <nav>
         <h3 class="toolBar" style="width: 99%;">
@@ -181,7 +182,7 @@
       <h2 class="headline"><span>give me a like</span></h2>
       <br/>
       <div style="text-align:center;">
-        <div class="fb-like" data-href="https://web-development-environments-2022.github.io/assignment1-Roni966/" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="false"></div>
+        <div class="fb-like" data-href="https://web-development-environments-2022.github.io/205580475/" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="false"></div>
       </div>
       <br/>
       <br/>
@@ -266,7 +267,7 @@
         <br/>
         Comment:
         <br/>
-        <textarea id="subject" name="subject" placeholder="Write something.." class="comment"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." class="comment"></p></textarea>
         <br/>
         <br/>
         <input type="submit" value="Send">
@@ -275,7 +276,6 @@
       <br/>
       <p style="text-align:center;"><a href="#"><b>Back to top</b></a></p>
     </section>
-
 
     <script type="text/javascript">
       $(function(){
@@ -289,6 +289,15 @@
         $(document).scroll(function() {
             $('#menu').toggle($(this).scrollTop()>1000)
         });​
+    </script>
+
+    <script>
+      tinymce.init({
+        selector: "#subject",
+        plugins: "emoticons",
+        toolbar: "emoticons",
+        menubar: false
+      });
     </script>
   </body>
 </html>
